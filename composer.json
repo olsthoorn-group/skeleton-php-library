@@ -1,0 +1,48 @@
+{
+  "name": "og/:package_name",
+  "description": ":package_description",
+  "keywords": [
+    "og",
+    "olsthoorn-group",
+    ":package_name"
+  ],
+  "homepage": "https://github.com/olsthoorn-group/:package_name",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": ":author_name",
+      "email": ":author_email",
+      "homepage": ":author_website",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "fabpot/php-cs-fixer": "dev-master",
+    "satooshi/php-coveralls": "dev-master",
+    "scrutinizer/ocular": "~1.1"
+  },
+  "suggest": {
+  },
+  "autoload": {
+    "psr-4": {
+      "OG\\Skeleton\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OG\\Skeleton\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
